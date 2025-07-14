@@ -1,103 +1,78 @@
-# 🧠 Quote Scraper – Progetto di Web Scraping in Python
+# 🧠 Quote Scraper
 
-Un semplice progetto di web scraping sviluppato in Python, che estrae citazioni, autori e tag dal sito [quotes.toscrape.com](http://quotes.toscrape.com/) e li salva in un file `.csv`.
+Uno scraper in Python che raccoglie citazioni dal sito [quotes.toscrape.com](http://quotes.toscrape.com/) e le salva in un file CSV.  
+Strutturato in moduli per rendere il progetto scalabile, ordinato e facile da manutenere.
 
-Questo progetto è parte del mio percorso di apprendimento su Python, con focus su:
-- automazione dei dati
-- gestione dei file
-- logging delle attività
-- pulizia del codice
+---
+
+## 📁 Struttura del Progetto
+
+```
+quotes-scraper/
+├── main.py               # Entry point: gestisce il flusso principale
+├── scraper/
+│   ├── __init__.py       # (Pacchetto Python)
+│   ├── config.py         # Configurazioni (URL, path, costanti)
+│   ├── core.py           # Funzioni per scraping e parsing
+│   └── utils.py          # Funzioni di supporto (es. salvataggio CSV)
+├── data/
+│   └── quotes.csv        # Output dei dati
+├── log/
+│   └── scraper.log       # File di log generato automaticamente
+├── .gitignore
+├── requirements.txt
+└── README.md
+```
 
 ---
 
 ## 🚀 Funzionalità
 
-- 🔍 Scansione automatica di più pagine web
-- 📑 Estrazione di:
-  - Testo della citazione
-  - Nome dell’autore
-  - Lista di tag associati
-- 💾 Salvataggio dei dati in formato CSV (`quotes.csv`)
-- 🪵 Logging completo su file (`scraper.log`)
-- 📂 Struttura organizzata in cartelle (`/data` e `/log`)
+- Scraping multi-pagina con gestione dinamica delle URL
+- Salvataggio in CSV con separazione dei dati
+- Logging avanzato su file e su console
+- Struttura modulare: separazione chiara tra configurazione, logica e utility
+- Percorsi dei file gestiti dinamicamente via `os.path`
 
 ---
 
-## 📁 Struttura del progetto
+## 🧪 Requisiti
 
-```
-quotes-scraper/
-├── data/
-│   └── quotes.csv        ← File con tutte le citazioni estratte
-├── log/
-│   └── scraper.log       ← Log dettagliato dell’attività
-├── scraper.py            ← Script principale di scraping
-├── README.md             ← Descrizione del progetto
-```
-
----
-
-## ⚙️ Come usarlo
-
-### 1. Requisiti
 - Python 3.6+
 - Librerie: `requests`, `beautifulsoup4`
 
-Installa le dipendenze con:
+Installa con:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-*(oppure manualmente)*
+---
+
+## 💻 Esecuzione
+
+Esegui il programma con:
 
 ```bash
-pip install requests beautifulsoup4
+python main.py
 ```
 
----
-
-### 2. Esecuzione
-
-Esegui lo script:
-
-```bash
-python scraper.py
-```
-
-I risultati saranno salvati in:
-- `data/quotes.csv`
-- `log/scraper.log`
+Il file CSV verrà salvato in `data/quotes.csv`  
+I log saranno visibili in `log/scraper.log`
 
 ---
 
-## ✏️ Personalizzazione
+## ✏️ Note tecniche
 
-Puoi modificare facilmente:
-- Il numero di pagine da estrarre (`pages_to_scrape`)
-- Il nome del file CSV o del log
-- Il comportamento in caso di errori o pagine vuote
-
----
-
-## 📌 Obiettivo del progetto
-
-Questo progetto è stato realizzato con l'obiettivo di:
-- Consolidare le basi di Python
-- Applicare il web scraping a un sito reale
-- Imparare a strutturare e pubblicare codice su GitHub in modo ordinato
+- Il file `config.py` centralizza tutte le impostazioni (es. URL base, numero di pagine, percorsi)
+- Le funzioni di scraping sono in `core.py`
+- Le funzioni di salvataggio sono in `utils.py`
+- Il file `main.py` gestisce l'esecuzione e configura il logging
 
 ---
 
-## 👤 Autore
+## 📌 Licenza & Autore
 
-**Luca Marrazzo**  
-Appassionato di automazione e tecnologie.  
-In transizione professionale verso il mondo IT.  
-👉 [GitHub Profile](https://github.com/ar3ac)
-
----
-
-## 📝 Licenza
-
-Distribuito per fini didattici e personali, liberamente modificabile e riutilizzabile.
+Creato da **Luca Marrazzo**  
+Progetto open-source a scopo didattico  
+Puoi riutilizzarlo liberamente per apprendere e sperimentare
