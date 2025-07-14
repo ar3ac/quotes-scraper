@@ -94,7 +94,7 @@ Questo progetto è stato realizzato con l'obiettivo di:
 **Luca Marrazzo**  
 Appassionato di automazione e tecnologie.  
 In transizione professionale verso il mondo IT.  
-👉 [GitHub Profile](https://github.com/TUOUSERNAME)
+👉 [GitHub Profile](https://github.com/ar3ac)
 
 ---
 

@@ -13,6 +13,8 @@ if not os.path.exists('log'):
     os.makedirs('log')
 if not os.path.exists('data'):
     os.makedirs('data')
+
+# Configurazione del logging
 logging.basicConfig(
     filename=logpath,      # File dove scrivere i log
     level=logging.INFO,          # Livello minimo che vuoi loggare
