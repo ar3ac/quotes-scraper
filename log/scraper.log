@@ -1,0 +1,13 @@
+2025-07-14 21:28:21,427 - INFO - Starting the scraping process...
+2025-07-14 21:28:21,427 - INFO - Scraping page 1: http://quotes.toscrape.com/page/1/
+2025-07-14 21:28:21,844 - INFO - Scraping page 2: http://quotes.toscrape.com/page/2/
+2025-07-14 21:28:22,459 - INFO - Scraping page 3: http://quotes.toscrape.com/page/3/
+2025-07-14 21:28:22,875 - INFO - Scraping page 4: http://quotes.toscrape.com/page/4/
+2025-07-14 21:28:23,303 - INFO - Scraping page 5: http://quotes.toscrape.com/page/5/
+2025-07-14 21:28:23,780 - INFO - Scraping page 6: http://quotes.toscrape.com/page/6/
+2025-07-14 21:28:24,181 - INFO - Scraping page 7: http://quotes.toscrape.com/page/7/
+2025-07-14 21:28:24,516 - INFO - Scraping page 8: http://quotes.toscrape.com/page/8/
+2025-07-14 21:28:24,897 - INFO - Scraping page 9: http://quotes.toscrape.com/page/9/
+2025-07-14 21:28:25,183 - INFO - Scraping page 10: http://quotes.toscrape.com/page/10/
+2025-07-14 21:28:25,508 - INFO - 97 Quotes saved to data/quotes.csv
+2025-07-14 21:28:25,508 - INFO - Scraping completed. 97 quotes found.
