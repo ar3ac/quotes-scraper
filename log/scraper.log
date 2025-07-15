@@ -34,3 +34,128 @@
 2025-07-14 22:16:31,534 - INFO - Found 10 quotes on http://quotes.toscrape.com/page/10/
 2025-07-14 22:16:31,537 - INFO - 97 Quotes saved to data/quotes.csv
 2025-07-14 22:16:31,537 - INFO - Scraping completed. 97 quotes found.
+2025-07-15 21:17:11,828 - INFO - Starting the scraping process...
+2025-07-15 21:17:33,593 - INFO - Starting the scraping process...
+2025-07-15 21:19:48,215 - INFO - Starting the scraping process...
+2025-07-15 21:20:17,364 - INFO - Starting the scraping process...
+2025-07-15 21:20:17,364 - INFO - Scraping page 1: http://quotes.toscrape.com/page/1/
+2025-07-15 21:20:18,210 - INFO - Found 10 quotes on http://quotes.toscrape.com/page/1/
+2025-07-15 21:20:18,210 - INFO - Scraping page 2: http://quotes.toscrape.com/page/2/
+2025-07-15 21:20:18,694 - INFO - Found 10 quotes on http://quotes.toscrape.com/page/2/
+2025-07-15 21:20:18,694 - INFO - Scraping page 3: http://quotes.toscrape.com/page/3/
+2025-07-15 21:20:19,041 - INFO - Found 9 quotes on http://quotes.toscrape.com/page/3/
+2025-07-15 21:20:19,041 - INFO - Scraping page 4: http://quotes.toscrape.com/page/4/
+2025-07-15 21:20:19,435 - INFO - Found 10 quotes on http://quotes.toscrape.com/page/4/
+2025-07-15 21:20:19,435 - INFO - Scraping page 5: http://quotes.toscrape.com/page/5/
+2025-07-15 21:20:19,729 - INFO - Found 9 quotes on http://quotes.toscrape.com/page/5/
+2025-07-15 21:20:19,729 - INFO - Scraping page 6: http://quotes.toscrape.com/page/6/
+2025-07-15 21:20:20,028 - INFO - Found 10 quotes on http://quotes.toscrape.com/page/6/
+2025-07-15 21:20:20,028 - INFO - Scraping page 7: http://quotes.toscrape.com/page/7/
+2025-07-15 21:20:20,535 - INFO - Found 10 quotes on http://quotes.toscrape.com/page/7/
+2025-07-15 21:20:20,535 - INFO - Scraping page 8: http://quotes.toscrape.com/page/8/
+2025-07-15 21:20:20,907 - INFO - Found 9 quotes on http://quotes.toscrape.com/page/8/
+2025-07-15 21:20:20,907 - INFO - Scraping page 9: http://quotes.toscrape.com/page/9/
+2025-07-15 21:20:21,195 - INFO - Found 10 quotes on http://quotes.toscrape.com/page/9/
+2025-07-15 21:20:21,195 - INFO - Scraping page 10: http://quotes.toscrape.com/page/10/
+2025-07-15 21:20:21,503 - INFO - Found 10 quotes on http://quotes.toscrape.com/page/10/
+2025-07-15 21:20:21,504 - INFO - 97 Quotes saved to data/quotes.csv
+2025-07-15 21:20:21,504 - INFO - Scraping completed. 97 quotes found.
+2025-07-15 21:20:37,491 - INFO - Starting the scraping process...
+2025-07-15 21:20:37,492 - INFO - Scraping page 1: http://quotes.toscrape.com/page/1/
+2025-07-15 21:20:37,864 - INFO - Found 10 quotes on http://quotes.toscrape.com/page/1/
+2025-07-15 21:20:37,865 - INFO - Scraping page 2: http://quotes.toscrape.com/page/2/
+2025-07-15 21:20:38,481 - INFO - Found 10 quotes on http://quotes.toscrape.com/page/2/
+2025-07-15 21:20:38,482 - INFO - Scraping page 3: http://quotes.toscrape.com/page/3/
+2025-07-15 21:20:38,842 - INFO - Found 9 quotes on http://quotes.toscrape.com/page/3/
+2025-07-15 21:20:38,842 - INFO - Scraping page 4: http://quotes.toscrape.com/page/4/
+2025-07-15 21:20:39,105 - INFO - Found 10 quotes on http://quotes.toscrape.com/page/4/
+2025-07-15 21:20:39,106 - INFO - Scraping page 5: http://quotes.toscrape.com/page/5/
+2025-07-15 21:20:39,364 - INFO - Found 9 quotes on http://quotes.toscrape.com/page/5/
+2025-07-15 21:20:39,364 - INFO - Scraping page 6: http://quotes.toscrape.com/page/6/
+2025-07-15 21:20:39,632 - INFO - Found 10 quotes on http://quotes.toscrape.com/page/6/
+2025-07-15 21:20:39,632 - INFO - Scraping page 7: http://quotes.toscrape.com/page/7/
+2025-07-15 21:20:39,915 - INFO - Found 10 quotes on http://quotes.toscrape.com/page/7/
+2025-07-15 21:20:39,915 - INFO - Scraping page 8: http://quotes.toscrape.com/page/8/
+2025-07-15 21:20:40,311 - INFO - Found 9 quotes on http://quotes.toscrape.com/page/8/
+2025-07-15 21:20:40,311 - INFO - Scraping page 9: http://quotes.toscrape.com/page/9/
+2025-07-15 21:20:40,668 - INFO - Found 10 quotes on http://quotes.toscrape.com/page/9/
+2025-07-15 21:20:40,668 - INFO - Scraping page 10: http://quotes.toscrape.com/page/10/
+2025-07-15 21:20:40,977 - INFO - Found 10 quotes on http://quotes.toscrape.com/page/10/
+2025-07-15 21:20:40,981 - INFO - 97 Quotes saved to data/quotes.csv
+2025-07-15 21:20:40,981 - INFO - Scraping completed. 97 quotes found.
+2025-07-15 21:24:06,129 - INFO - Starting the scraping process...
+2025-07-15 21:24:06,129 - INFO - Scraping page 1: http://quotes.toscrape.com/page/1/
+2025-07-15 21:24:06,406 - INFO - Found 10 quotes on http://quotes.toscrape.com/page/1/
+2025-07-15 21:24:06,406 - INFO - Scraping page 2: http://quotes.toscrape.com/page/2/
+2025-07-15 21:24:06,872 - INFO - Found 10 quotes on http://quotes.toscrape.com/page/2/
+2025-07-15 21:24:06,873 - INFO - Scraping page 3: http://quotes.toscrape.com/page/3/
+2025-07-15 21:24:07,244 - INFO - Found 9 quotes on http://quotes.toscrape.com/page/3/
+2025-07-15 21:24:07,245 - INFO - Scraping page 4: http://quotes.toscrape.com/page/4/
+2025-07-15 21:24:07,594 - INFO - Found 10 quotes on http://quotes.toscrape.com/page/4/
+2025-07-15 21:24:07,594 - INFO - Scraping page 5: http://quotes.toscrape.com/page/5/
+2025-07-15 21:24:07,986 - INFO - Found 9 quotes on http://quotes.toscrape.com/page/5/
+2025-07-15 21:24:07,986 - INFO - Scraping page 6: http://quotes.toscrape.com/page/6/
+2025-07-15 21:24:08,257 - INFO - Found 10 quotes on http://quotes.toscrape.com/page/6/
+2025-07-15 21:24:08,257 - INFO - Scraping page 7: http://quotes.toscrape.com/page/7/
+2025-07-15 21:24:08,581 - INFO - Found 10 quotes on http://quotes.toscrape.com/page/7/
+2025-07-15 21:24:08,582 - INFO - Scraping page 8: http://quotes.toscrape.com/page/8/
+2025-07-15 21:24:08,967 - INFO - Found 9 quotes on http://quotes.toscrape.com/page/8/
+2025-07-15 21:24:08,967 - INFO - Scraping page 9: http://quotes.toscrape.com/page/9/
+2025-07-15 21:24:09,242 - INFO - Found 10 quotes on http://quotes.toscrape.com/page/9/
+2025-07-15 21:24:09,242 - INFO - Scraping page 10: http://quotes.toscrape.com/page/10/
+2025-07-15 21:24:09,579 - INFO - Found 10 quotes on http://quotes.toscrape.com/page/10/
+2025-07-15 21:24:09,582 - INFO - 97 Quotes saved to data/quotes.csv
+2025-07-15 21:24:09,582 - INFO - Scraping completed. 97 quotes found.
+2025-07-15 21:24:48,371 - INFO - Starting the scraping process...
+2025-07-15 21:24:48,372 - INFO - Scraping page 1: http://quotes.toscrape.com/page/1/
+2025-07-15 21:24:48,887 - INFO - Found 10 quotes on http://quotes.toscrape.com/page/1/
+2025-07-15 21:24:48,887 - INFO - Scraping page 2: http://quotes.toscrape.com/page/2/
+2025-07-15 21:24:49,372 - INFO - Found 10 quotes on http://quotes.toscrape.com/page/2/
+2025-07-15 21:24:49,372 - INFO - Scraping page 3: http://quotes.toscrape.com/page/3/
+2025-07-15 21:24:49,748 - INFO - Found 9 quotes on http://quotes.toscrape.com/page/3/
+2025-07-15 21:24:49,748 - INFO - Scraping page 4: http://quotes.toscrape.com/page/4/
+2025-07-15 21:24:50,018 - INFO - Found 10 quotes on http://quotes.toscrape.com/page/4/
+2025-07-15 21:24:50,018 - INFO - Scraping page 5: http://quotes.toscrape.com/page/5/
+2025-07-15 21:24:50,260 - INFO - Found 9 quotes on http://quotes.toscrape.com/page/5/
+2025-07-15 21:24:50,261 - INFO - Scraping page 6: http://quotes.toscrape.com/page/6/
+2025-07-15 21:24:50,624 - INFO - Found 10 quotes on http://quotes.toscrape.com/page/6/
+2025-07-15 21:24:50,624 - INFO - Scraping page 7: http://quotes.toscrape.com/page/7/
+2025-07-15 21:24:50,991 - INFO - Found 10 quotes on http://quotes.toscrape.com/page/7/
+2025-07-15 21:24:50,991 - INFO - Scraping page 8: http://quotes.toscrape.com/page/8/
+2025-07-15 21:24:51,347 - INFO - Found 9 quotes on http://quotes.toscrape.com/page/8/
+2025-07-15 21:24:51,347 - INFO - Scraping page 9: http://quotes.toscrape.com/page/9/
+2025-07-15 21:24:51,730 - INFO - Found 10 quotes on http://quotes.toscrape.com/page/9/
+2025-07-15 21:24:51,730 - INFO - Scraping page 10: http://quotes.toscrape.com/page/10/
+2025-07-15 21:24:52,096 - INFO - Found 10 quotes on http://quotes.toscrape.com/page/10/
+2025-07-15 21:24:52,097 - INFO - 97 Quotes saved to data/quotes.csv
+2025-07-15 21:24:52,098 - INFO - Scraping completed. 97 quotes found.
+2025-07-15 21:25:11,321 - INFO - Starting the scraping process...
+2025-07-15 21:25:11,322 - INFO - Scraping page 1: http://quotes.toscrape.com/page/1/
+2025-07-15 21:25:11,641 - INFO - Found 10 quotes on http://quotes.toscrape.com/page/1/
+2025-07-15 21:25:11,641 - INFO - Scraping page 2: http://quotes.toscrape.com/page/2/
+2025-07-15 21:25:12,021 - INFO - Found 10 quotes on http://quotes.toscrape.com/page/2/
+2025-07-15 21:25:12,021 - INFO - Scraping page 3: http://quotes.toscrape.com/page/3/
+2025-07-15 21:25:12,373 - INFO - Found 9 quotes on http://quotes.toscrape.com/page/3/
+2025-07-15 21:25:12,374 - INFO - Scraping page 4: http://quotes.toscrape.com/page/4/
+2025-07-15 21:25:12,752 - INFO - Found 10 quotes on http://quotes.toscrape.com/page/4/
+2025-07-15 21:25:12,752 - INFO - Scraping page 5: http://quotes.toscrape.com/page/5/
+2025-07-15 21:25:13,124 - INFO - Found 9 quotes on http://quotes.toscrape.com/page/5/
+2025-07-15 21:25:13,125 - INFO - Scraping page 6: http://quotes.toscrape.com/page/6/
+2025-07-15 21:25:13,410 - INFO - Found 10 quotes on http://quotes.toscrape.com/page/6/
+2025-07-15 21:25:13,411 - INFO - Scraping page 7: http://quotes.toscrape.com/page/7/
+2025-07-15 21:25:13,740 - INFO - Found 10 quotes on http://quotes.toscrape.com/page/7/
+2025-07-15 21:25:13,740 - INFO - Scraping page 8: http://quotes.toscrape.com/page/8/
+2025-07-15 21:25:14,095 - INFO - Found 9 quotes on http://quotes.toscrape.com/page/8/
+2025-07-15 21:25:14,095 - INFO - Scraping page 9: http://quotes.toscrape.com/page/9/
+2025-07-15 21:25:14,469 - INFO - Found 10 quotes on http://quotes.toscrape.com/page/9/
+2025-07-15 21:25:14,469 - INFO - Scraping page 10: http://quotes.toscrape.com/page/10/
+2025-07-15 21:25:14,741 - INFO - Found 10 quotes on http://quotes.toscrape.com/page/10/
+2025-07-15 21:25:14,745 - INFO - 97 Quotes saved to prova/file.csv
+2025-07-15 21:25:14,745 - INFO - Scraping completed. 97 quotes found.
+2025-07-15 21:25:28,274 - INFO - Starting the scraping process...
+2025-07-15 21:25:28,274 - INFO - Scraping page 1: http://quotes.toscrape.com/page/1/
+2025-07-15 21:25:28,828 - INFO - Found 10 quotes on http://quotes.toscrape.com/page/1/
+2025-07-15 21:25:28,828 - INFO - Scraping page 2: http://quotes.toscrape.com/page/2/
+2025-07-15 21:25:29,439 - INFO - Found 10 quotes on http://quotes.toscrape.com/page/2/
+2025-07-15 21:25:29,439 - INFO - 20 Quotes saved to data/quotes.csv
+2025-07-15 21:25:29,439 - INFO - Scraping completed. 20 quotes found.

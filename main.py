@@ -3,8 +3,27 @@ import os
 from scraper import config
 from scraper import core
 from scraper import utils
+import argparse
+
+def parse_arguments():
+    parser = argparse.ArgumentParser(description="Scraper di citazioni")
+    parser.add_argument('--pages', type=int, default=10,
+                    help='Numero di pagine da scrapare')
+    parser.add_argument('--output', type=str,
+                    default='data/quotes.csv', help='Percorso file CSV')
+
+    args = parser.parse_args()
+    output_dir = os.path.dirname(args.output)
+    if output_dir and not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+
+    #logging.info(f"Scraperà {args.pages} pagine e salverà in {args.output}")    
+    return args
+
 
 def main():
+    args = parse_arguments()
+    #print(args)
     # Create necessary directories if they do not exist
     if not os.path.exists(config.LOG_FOLDER):
         os.makedirs(config.LOG_FOLDER)
@@ -24,8 +43,10 @@ def main():
     console.setFormatter(formatter)
     logging.getLogger().addHandler(console)
     logging.info("Starting the scraping process...")
-    quotes = core.scrape_quotes()
-    utils.save_quotes_to_file(quotes)
+
+    quotes = core.scrape_quotes(pages=args.pages)
+    utils.save_quotes_to_file(quotes, filename=args.output)
+
     logging.info(f"Scraping completed. {len(quotes)} quotes found.")
 
 if __name__ == "__main__":
