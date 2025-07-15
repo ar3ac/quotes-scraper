@@ -1,46 +1,23 @@
-# 📝 Quotes Scraper
 
-Uno scraper semplice ma completo, scritto in Python, che estrae citazioni dal sito [quotes.toscrape.com](http://quotes.toscrape.com) e le salva in un file CSV.
+# 📝 Quote Scraper
 
-## 🚀 Funzionalità principali
+Uno scraper Python che estrae citazioni dal sito [quotes.toscrape.com](http://quotes.toscrape.com/), insieme ai dettagli sugli autori. I dati vengono salvati in formato CSV.
 
-- 📄 Estrae citazioni, autori e tag da più pagine
-- 🛠️ Struttura modulare (config, core, utils)
-- 🧾 Salva i risultati in formato CSV personalizzabile
-- 🧠 Logging avanzato su file e console
-- 🛡️ Gestione errori e creazione automatica delle cartelle
-- 🛎️ Parametri da riga di comando via `argparse`
+---
 
-## 🧪 Come usarlo
+## 🚀 Funzionalità
 
-Assicurati di avere **Python 3.6+** installato.
+- 🔍 Scraping di citazioni da più pagine
+- 🧠 Estrazione dettagliata dell'autore (data di nascita, luogo, descrizione)
+- 🏷️ Estrazione dei tag associati a ciascuna citazione
+- 💾 Salvataggio in due file CSV separati (`quotes.csv` e `authors.csv`)
+- 📦 Modularizzazione del codice
+- 🔧 Configurabile da riga di comando con `argparse`
+- 🧪 Logging completo in `scraper.log`
 
-Installa i requisiti (solo `beautifulsoup4` e `requests`):
+---
 
-```bash
-pip install -r requirements.txt
-```
-
-### 📥 Esegui lo scraper
-
-```bash
-python main.py
-```
-
-Per personalizzare:
-
-```bash
-python main.py --pages 5 --output risultati/citazioni.csv
-```
-
-## ⚙️ Argomenti CLI disponibili
-
-| Argomento     | Descrizione                            | Default                |
-|---------------|----------------------------------------|------------------------|
-| `--pages`     | Numero di pagine da scrapare           | `10`                   |
-| `--output`    | Percorso del file CSV di output        | `data/quotes.csv`      |
-
-## 🗂️ Struttura del progetto
+## 🧰 Struttura del progetto
 
 ```
 quotes-scraper/
@@ -48,27 +25,63 @@ quotes-scraper/
 │   ├── __init__.py
 │   ├── config.py
 │   ├── core.py
-│   └── utils.py
+│   ├── utils.py
 ├── data/
-│   └── quotes.csv
+│   ├── quotes.csv
+│   ├── authors.csv
 ├── log/
 │   └── scraper.log
 ├── main.py
 ├── requirements.txt
+├── .gitignore
 └── README.md
 ```
 
-## 📦 requirements.txt
+---
 
+## ⚙️ Utilizzo
+
+```bash
+# Per eseguire lo scraping delle citazioni (default: 10 pagine)
+python main.py
+
+# Per specificare numero di pagine e output personalizzato
+python main.py --pages 5 --output data/citazioni.csv
+
+# Per eseguire anche lo scraping degli autori
+python main.py --authors
 ```
-requests
-beautifulsoup4
+
+---
+
+## 🔧 Configurazione
+
+Le configurazioni di base (URL, cartelle di log e dati, numero pagine) si trovano nel file `scraper/config.py`.  
+Puoi modificarlo per adattarlo ai tuoi scopi.
+
+---
+
+## 📦 Requisiti
+
+- Python 3.6+
+- Richieste installabili da `requirements.txt`
+
+```bash
+pip install -r requirements.txt
 ```
 
-## 👤 Autore
+---
 
-Luca Marrazzo — progetto sviluppato nel mio percorso di crescita come sviluppatore Python, con attenzione all'automazione e alla qualità del codice.
+## 🧠 Autore
 
-## 📝 Licenza
+**Luca Marrazzo**  
+Progetto realizzato come parte del mio percorso di crescita in Python e automazione.  
+Mi trovi su GitHub: [@ar3ac](https://github.com/ar3ac)
 
-Distribuito liberamente per uso personale o didattico. Nessuna licenza formale.
+---
+
+## 📌 Note
+
+- Lo script ignora le citazioni senza testo/autore/tag
+- Il file `authors.csv` verrà creato solo se usi `--authors`
+- È pensato per essere esteso e integrato in altri sistemi

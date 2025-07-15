@@ -9,7 +9,7 @@ def scrape_quotes(pages=config.PAGES_TO_SCRAPE):
         page_url = f"{config.URL_BASE}page/{i}/"
         logging.info(f"Scraping page {i}: {page_url}")
         quotes = extract_quotes(page_url)
-        logging.info(f"Found {len(quotes)} quotes on {page_url}")
+        logging.info(f"Found {len(quotes)} quotes on page {i}")
         all_quotes.extend(quotes)
     return all_quotes
 
@@ -29,14 +29,20 @@ def extract_quotes(page_url):
     for quote in soup.find_all('div', class_='quote'):
         text = quote.find('span', class_='text').get_text()
         author = quote.find('small', class_='author').get_text()
+        author_link_suffix = quote.find('a')['href']
+        author_link = config.URL_BASE.rstrip('/') + author_link_suffix
         tags = [tag.get_text() for tag in quote.find_all('a', class_='tag')]
         # print(f"{text} by {author}   with tags {tags}")
-        if text and author and tags:
+        if text and author_link and tags:
             quotes.append({
                 'text': text,
                 'author': author,
+                'author_link': author_link,
                 'tags': tags
             })
     if not quotes:
         logging.info(f"No quotes found on {page_url}")
     return quotes
+
+
+
