@@ -46,10 +46,8 @@ quotes-scraper/
 python main.py
 
 # Per specificare numero di pagine e output personalizzato
-python main.py --pages 5 --output data/citazioni.csv
+python main.py --pages 5 --output data/citazioni.csv --authors data/autori.csv
 
-# Per eseguire anche lo scraping degli autori
-python main.py --authors
 ```
 
 ---
