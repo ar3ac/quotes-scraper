@@ -4,6 +4,11 @@ import logging
 from scraper import config
 
 def scrape_quotes(pages=config.PAGES_TO_SCRAPE):
+    """
+    Estrae citazioni da un numero specificato di pagine.
+    :param pages: Numero di pagine da scrapare
+    :return: Lista di citazioni
+    """
     all_quotes = []
     for i in range(1, pages + 1):  # Scrape specified number of  pages
         page_url = f"{config.URL_BASE}page/{i}/"
@@ -15,6 +20,9 @@ def scrape_quotes(pages=config.PAGES_TO_SCRAPE):
 
 
 def extract_quotes(page_url):
+    """ Estrae le citazioni da una pagina specificata.
+    :param page_url: URL della pagina
+    :return: Lista di citazioni trovate nella pagina"""
     try:
         response = requests.get(page_url)
     except requests.RequestException as e:

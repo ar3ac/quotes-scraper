@@ -6,6 +6,12 @@ from scraper import utils
 import argparse
 
 def parse_arguments():
+    """
+    Parsea gli argomenti da linea di comando:
+    --pages: numero di pagine da scrapare
+    --output: file CSV per le citazioni
+    --authors: file CSV per i dettagli degli autori
+    """
     parser = argparse.ArgumentParser(description="Scraper di citazioni")
     parser.add_argument('--pages', type=int, default=10,
                     help='Numero di pagine da scrapare')
@@ -26,6 +32,9 @@ def parse_arguments():
 
 
 def main():
+    """
+    Funzione principale per eseguire lo scraper.
+    """
     args = parse_arguments()
     #print(args)
     # Create necessary directories if they do not exist

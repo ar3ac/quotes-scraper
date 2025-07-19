@@ -81,5 +81,4 @@ Mi trovi su GitHub: [@ar3ac](https://github.com/ar3ac)
 ## 📌 Note
 
 - Lo script ignora le citazioni senza testo/autore/tag
-- Il file `authors.csv` verrà creato solo se usi `--authors`
 - È pensato per essere esteso e integrato in altri sistemi

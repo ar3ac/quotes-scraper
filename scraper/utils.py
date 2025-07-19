@@ -7,6 +7,11 @@ from bs4 import BeautifulSoup
 
 CSV_PATH = os.path.join(config.DOWNLOAD_FOLDER, config.CSV_FILENAME)
 def save_quotes_to_file(quotes, filename=CSV_PATH):
+    """
+    Salva le citazioni in un file CSV.
+    :param quotes: Lista di citazioni da salvare
+    :param filename: Percorso del file CSV
+    """
     with open(filename, 'w', newline='', encoding='utf-8') as csvfile:
         fieldnames = ['quote', 'author', 'tags']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
@@ -22,6 +27,7 @@ def save_quotes_to_file(quotes, filename=CSV_PATH):
 
 
 def scrape_author_details(author_url):
+    """Estrae i dettagli dell'autore dalla pagina specificata."""
     try:
         response = requests.get(author_url)
         response.raise_for_status()
@@ -38,23 +44,20 @@ def scrape_author_details(author_url):
 
     if born_date:
         details['born_date'] = born_date.get_text(strip=True)
-    else:
-        details['born_date'] = ''
-
     if born_location:
         details['born_location'] = born_location.get_text(strip=True)
-    else:
-        details['born_location'] = ''
-
     return details
 
 
 def save_authors_to_file(authors_dict, filename):
+    """    Salva i dettagli degli autori in un file CSV.
+    :param authors_dict: Dizionario con i dettagli degli autori
+    :param filename: Percorso del file CSV"""
     with open(filename, 'w', newline='', encoding='utf-8') as csvfile:
         fieldnames = ['name', 'link', 'born_date', 'born_location']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 
         writer.writeheader()
-        for author_data in authors_dict.values():
-            writer.writerow(author_data)
+        for name in sorted(authors_dict):
+            writer.writerow(authors_dict[name])
     logging.info(f"{len(authors_dict)} authors saved to {filename}")
