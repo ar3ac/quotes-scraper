@@ -49,15 +49,29 @@ def scrape_author_details(author_url):
     return details
 
 
-def save_authors_to_file(authors_dict, filename):
+def save_authors_to_file(quotes, filename):
     """    Salva i dettagli degli autori in un file CSV.
     :param authors_dict: Dizionario con i dettagli degli autori
     :param filename: Percorso del file CSV"""
+    # Estrai autori unici e raccogli i dettagli
+    authors = {}
+    for quote in quotes:
+        author = quote['author']
+        link = quote['author_link']
+        if author not in authors:
+            logging.info(f"Scraping author: {author}")
+            details = scrape_author_details(link)
+            authors[author] = {
+                'name': author,
+                'link': link,
+                'born_date': details.get('born_date', ''),
+                'born_location': details.get('born_location', '')
+            }
     with open(filename, 'w', newline='', encoding='utf-8') as csvfile:
         fieldnames = ['name', 'link', 'born_date', 'born_location']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 
         writer.writeheader()
-        for name in sorted(authors_dict):
-            writer.writerow(authors_dict[name])
-    logging.info(f"{len(authors_dict)} authors saved to {filename}")
+        for name in sorted(authors):
+            writer.writerow(authors[name])
+    logging.info(f"{len(authors)} authors saved to {filename}")

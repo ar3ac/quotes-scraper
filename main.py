@@ -30,26 +30,24 @@ def parse_arguments():
     #logging.info(f"Scraperà {args.pages} pagine e salverà in {args.output}")    
     return args
 
-
-def main():
+def setup_environment(args):
     """
-    Funzione principale per eseguire lo scraper.
+    Configura l'ambiente di esecuzione:
+    - Crea le cartelle necessarie
+    - Configura il logging
     """
-    args = parse_arguments()
-    #print(args)
-    # Create necessary directories if they do not exist
     if not os.path.exists(config.LOG_FOLDER):
         os.makedirs(config.LOG_FOLDER)
     if not os.path.exists(config.DOWNLOAD_FOLDER):
         os.makedirs(config.DOWNLOAD_FOLDER)
 
-    # Configurazione del logging
     log_path = os.path.join(config.LOG_FOLDER, config.LOG_FILENAME)
     logging.basicConfig(
-        filename=log_path,      # File dove scrivere i log
-        level=logging.INFO,          # Livello minimo che vuoi loggare
+        filename=log_path,
+        level=logging.INFO,
         format='%(asctime)s - %(levelname)s - %(message)s'
-    ) 
+    )
+    
     console = logging.StreamHandler()
     console.setLevel(logging.INFO)
     formatter = logging.Formatter('%(levelname)s - %(message)s')
@@ -57,28 +55,33 @@ def main():
     logging.getLogger().addHandler(console)
     logging.info("Starting the scraping process...")
 
-    quotes = core.scrape_quotes(pages=args.pages)
-
+def save_output_to_file(quotes,args):
+    """    Salva le citazioni in un file CSV.
+    :param quotes: Lista di citazioni da salvare
+    """
     utils.save_quotes_to_file(quotes, filename=args.output)
+    utils.save_authors_to_file(quotes, filename=args.authors)
+
+def run_scraping(pages):
+    """
+    Esegue il processo di scraping delle citazioni.
+    :param pages: Numero di pagine da scrapare
+    """
+    quotes = core.scrape_quotes(pages=pages)
+    return quotes
+
+def main():
+    """
+    Funzione principale per eseguire lo scraper.
+    """
+    args = parse_arguments()
+    setup_environment(args)
+    quotes = run_scraping(args.pages)
+
+    save_output_to_file(quotes, args)
 
 
-    # Estrai autori unici e raccogli i dettagli
-    authors = {}
-    for quote in quotes:
-        author = quote['author']
-        link = quote['author_link']
-        if author not in authors:
-            logging.info(f"Scraping author: {author}")
-            details = utils.scrape_author_details(link)
-            authors[author] = {
-                'name': author,
-                'link': link,
-                'born_date': details.get('born_date', ''),
-                'born_location': details.get('born_location', '')
-            }
 
-    # Salva dettagli autori in CSV
-    utils.save_authors_to_file(authors, filename=args.authors)
         
 
     logging.info(f"Scraping completed. {len(quotes)} quotes found.")
